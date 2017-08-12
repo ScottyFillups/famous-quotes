@@ -1,0 +1,28 @@
+{
+  "name": "gen-quote",
+  "version": "1.0.0",
+  "description": "An Express wrapper for the \"Random Famous Quotes\" API found on Mashape.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generate",
+    "quotes",
+    "quote",
+    "random quote",
+    "random",
+    "mashape"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScottyFillups/gen-quote.git"
+  },
+  "author": "Philip Scott",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "request": "^2.81.0",
+    "unirest": "^0.5.1"
+  }
+}
