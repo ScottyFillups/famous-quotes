@@ -1,8 +1,9 @@
 # famous-quotes
 
-An Express wrapper for the "Random Famous Quotes" API found on Mashape. Link: https://market.mashape.com/andruxnet/random-famous-quotes
+An Express wrapper for the "Random Famous Quotes" API found on Mashape. 
+Link: https://market.mashape.com/andruxnet/random-famous-quotes
 
-The response body of the `GET` request to the endpoint will be an object with a `quote` and `author` property. SEe examples for more details.
+The response body of the `GET` request to the endpoint will be an object with a `quote` and `author` property. See examples for more details.
 
 You may use this for a "quote of the day", at least, that's what I use it for. Or perhaps you could have a button that generates a random quote when clicked. Keep in mind that there are likely rate limits for the API; this wrapper does not limit the number of requests you can make, so please do your own research if you plan to do something request intensive.
 
@@ -45,7 +46,7 @@ quoteMaker.getGenerator(1000 * 60 * 60);
 app.use('myendpoint', quoteMaker.getRouter());
 ```
 
-And on client-side... (I'm using Angular, and omitted some steps; consider it an exercise for the reader ;))
+And on client-side... (I'm using Angular, and omitted some steps; consider it an exercise for the reader to fill in the steps ;))
 ```js
 $http({
   method: 'GET',
