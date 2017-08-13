@@ -37,11 +37,9 @@ function quoteMaker(key, options) {
     },
     getGenerator: function(refresh, quoteOptions) {
       refresh = refresh || 1000 * 60 * 60 * 24;
+      this.genQuote(quoteOptions);
       return setInterval(function() {
-        this.genQuote({
-          type: quoteOptions.type,
-          count: quoteOptions.count
-        });
+        this.genQuote(quoteOptions);
       }, refresh);
     }
   };
