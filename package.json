@@ -1,6 +1,6 @@
 {
   "name": "famous-quotes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Express wrapper for the \"Random Famous Quotes\" API found on Mashape.",
   "main": "index.js",
   "scripts": {
