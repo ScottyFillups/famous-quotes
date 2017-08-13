@@ -21,6 +21,7 @@ function quoteMaker(key, options) {
   return {
     getRouter: () => { return router; },
     genQuote: (quoteOptions) => {
+      quoteOptions = quoteOptions || {};
       let type = quoteOptions.count || 'famous';
       let count = quoteOptions.count || 1;
       count = (count > 100) ? 100 : count;
